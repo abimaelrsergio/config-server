@@ -2,10 +2,10 @@ server:
   port: 8888
   
 spring:
-  profiles:
-    active: native
   cloud:
     config:
       server:
-        native:
-          search-locations: /home/abimael/Documentos/microservice-repo
+        git:
+          uri: https://github.com/abimaelrsergio/microservice-repo
+          search-paths: fornecedor
+          
