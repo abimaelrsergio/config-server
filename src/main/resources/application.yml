@@ -5,7 +5,9 @@ spring:
   cloud:
     config:
       server:
+        encrypt:
+          enabled: false
         git:
           uri: https://github.com/abimaelrsergio/microservice-repo
-          search-paths: fornecedor
+          search-paths: fornecedor, loja, transportador
           
